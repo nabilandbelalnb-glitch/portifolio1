@@ -20,3 +20,6 @@ function sendMail() {
     .catch((err) => console.log(err));
 }
 
+function toggleMenu() {
+  document.getElementById("nav-links").classList.toggle("active");
+}

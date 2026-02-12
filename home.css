@@ -60,6 +60,12 @@ header {
   z-index: 1000;
 }
 
+.menu-toggle {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -172,7 +178,7 @@ footer {
   color: white;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     background: #333;
@@ -183,20 +189,55 @@ footer {
     display: none;
   }
 
-  nav ul.active {
-    display: flex;
-  }
+
 
   .menu-toggle {
     display: block;
     cursor: pointer;
   }
-}
+} */
 
-.menu-toggle {
-  display: none;
-  color: white;
-  font-size: 1.5rem;
+@media (max-width: 320px) {
+  nav ul {
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 200px;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 14px;
+    border-radius: 10px;
+    position: absolute;
+    top: 57px;
+    left: 33px;
+    font-size: 20px;
+  }
+
+  li :hover{
+    color: #007b80;
+  }
+
+  * {
+    position: relative;
+  }
+
+  .submit {
+    margin-left: -277px;
+    margin-top: 77px;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+  }
 }
 
 /* From Uiverse.io by Maximinodotpy */
