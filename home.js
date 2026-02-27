@@ -23,3 +23,6 @@ function sendMail() {
 function toggleMenu() {
   document.getElementById("nav-links").classList.toggle("active");
 }
+
+const load = document.querySelector(".loader");
+window.onload(load.classList.add("act"));
